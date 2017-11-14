@@ -1,0 +1,72 @@
+body {
+
+  text-align: center;
+  color: #ffffff;
+  background-color: #12352cf3;
+  background-image: linear-gradient(180deg, #172838,#1626359a,#7b899618);
+
+ 
+}
+
+
+navigationlinks{
+  
+    text-align: center;
+    font-size: 38px;
+}
+
+a:link {
+    color: rgb(255, 253, 253);
+}
+  
+
+/*
+ *contains general description
+ */
+.abouttext{
+ 
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+
+
+/*
+ * Making image circle 
+ */
+.img-circle {
+  border-radius: 50%;
+}
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+   margin: 0 +150px 10px;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(197, 197, 197);
+}
+
+/* selected link */
+a:active {
+  color: rgb(204, 204, 204);
+}
+
