@@ -2,9 +2,8 @@ body {
 
   text-align: center;
   color: #ffffff;
-  background-color: #12352cf3;
-  background-image: linear-gradient(180deg, #172838,#1626359a,#7b899618);
-
+  background-color: #50031de0;
+  background-image: linear-gradient(180deg, #172827,#1a2d3dc7,#7b899618);
  
 }
 
@@ -18,17 +17,29 @@ navigationlinks{
 a:link {
     color: rgb(255, 253, 253);
 }
-  
 
+h1{
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+
+}
+  
+h2{
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
 /*
  *contains general description
  */
-.abouttext{
- 
+abouttext{
+  
+  font-weight: 200;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 14px;
+ 
   
 }
 
@@ -44,7 +55,8 @@ a:link {
  * Main column and sidebar layout
  */
 
-.blog-main {
+blog-main {
+  
   font-size: 18px;
   line-height: 1.5;
   text-align: justify;
@@ -70,3 +82,12 @@ a:active {
   color: rgb(204, 204, 204);
 }
 
+otherbody {
+  
+    text-align: center;
+    color: #ffffff;
+    background-color: #e21937f3;
+    background-image: linear-gradient(180deg, #172827,#1a2d3dc7,#7b899618);
+  
+   
+  }
