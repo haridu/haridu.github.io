@@ -18,6 +18,16 @@ body {
   min-height:0px !important;
 }
 
+Table {
+  width: 100%;
+ 
+  border: 1px;
+  min-width: 100%;
+  position: relative;
+  opacity: 0.97;
+  background: transparent;
+}
+
 navigationlinks{
   
     text-align: center;
@@ -39,6 +49,12 @@ h2{
   font-size: 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+skills{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 /*
  *contains general description
