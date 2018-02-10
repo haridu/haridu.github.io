@@ -4,7 +4,11 @@ body {
   color: #ffffff;
   background-color: #50031de0;
   background-image: linear-gradient(180deg, #172827,#1a2d3dc7,#7b899618);
+
  
+}
+.container{
+  width: 900px ;
 }
 
 
@@ -26,7 +30,7 @@ h1{
 }
   
 h2{
-  font-size: 26px;
+  font-size: 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
@@ -39,8 +43,7 @@ abouttext{
   padding: 0;
   margin: 0;
   font-size: 14px;
- 
-  
+
 }
 
 
@@ -55,12 +58,17 @@ abouttext{
  * Main column and sidebar layout
  */
 
-blog-main {
+.blog-main {
   
+ 
   font-size: 18px;
   line-height: 1.5;
   text-align: justify;
-   margin: 0 +150px 10px;
+ 
+
+   /*change the value to suite ur need*/
+  
+ 
 }
 
 a:link {
@@ -83,7 +91,7 @@ a:active {
 }
 
 otherbody {
-  
+  width:300px;
     text-align: center;
     color: #ffffff;
     background-color: #e21937f3;
