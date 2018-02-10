@@ -7,15 +7,12 @@ body {
 
  
 }
-.container{
-  width: 900px ;
-}
 
 
 navigationlinks{
   
     text-align: center;
-    font-size: 38px;
+    font-size: 30px;
 }
 
 a:link {
@@ -30,7 +27,7 @@ h1{
 }
   
 h2{
-  font-size: 22px;
+  font-size: 19px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
