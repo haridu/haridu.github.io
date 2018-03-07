@@ -3,11 +3,12 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #50031de0;
+  background-color:rgba(80,3,29,0.88);
   background-image: linear-gradient(180deg, #172827,#1a2d3dc7,#7b899618);
+  background-image: linear-gradient(180deg, rgb(23, 40, 39),rgba(26,45,61,0.78),rgba(123,137,150,0.09));
 
- 
+  
 }
-
 
 html {
   min-height: 100%;
@@ -95,7 +96,6 @@ abouttext{
  
 
    /*change the value to suite ur need*/
-  
  
 }
 
