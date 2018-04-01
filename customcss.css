@@ -6,14 +6,12 @@ body {
   background-color:rgba(80,3,29,0.88);
   background-image: linear-gradient(180deg, #172827,#1a2d3dc7,#7b899618);
   background-image: linear-gradient(180deg, rgb(23, 40, 39),rgba(26,45,61,0.78),rgba(123,137,150,0.09));
-
   
 }
 
 html {
   min-height: 100%;
 }
-
 
 .container {
   padding-right: 15px;
@@ -27,7 +25,6 @@ html {
 
 Table {
   width: 100%;
- 
   border: 1px;
   min-width: 100%;
   position: relative;
@@ -37,8 +34,12 @@ Table {
 
 navigationlinks{
   
-    text-align: center;
-    font-size: 38px;
+    text-align: center;    
+}
+
+navigationlink{
+  font-size: 38px;
+  padding: 25px;
 }
 
 a:link {
