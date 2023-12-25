@@ -1,4 +1,6 @@
-html, body{ height: 100%; margin: 0;}
+html, body{ 
+  height: 100%; 
+  margin: 0;}
 
 .container {
   padding-right: 15px;
@@ -20,8 +22,10 @@ html, body{ height: 100%; margin: 0;}
 Table {
   width: 100%;
   border: 1px;
-  min-width: 100%;
+  max-width: 800px;
   position: relative;
+  margin-right: auto;
+  margin-left: auto;
   opacity: 0.97;
   background: transparent;
 }
@@ -131,7 +135,6 @@ otherbody {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-
 
 /* Featurettes
 ------------------------- */
