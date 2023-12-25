@@ -1,14 +1,4 @@
-body {
-
- 
-  
-}
-
-
-
-html {
-  min-height: 100%;
-}
+html, body{ height: 100%; margin: 0;}
 
 .container {
   padding-right: 15px;
@@ -18,6 +8,13 @@ html {
   max-width: 900px;
   overflow:hidden;
   min-height:0px !important;
+}
+
+.about{
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 99%;
 }
 
 Table {
@@ -47,7 +44,6 @@ h1{
   font-size: 60px;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
-
 }
   
 h2{
@@ -72,7 +68,6 @@ abouttext{
   font-size: 14px;
 
 }
-
 
 /*
  * Making image circle 
@@ -122,11 +117,7 @@ otherbody {
     color: #ffffff;
     background-color: #e21937f3;
     background-image: linear-gradient(180deg, #172827,#1a2d3dc7,#7b899618);
-  
-   
   }
-
-  
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
@@ -155,10 +146,6 @@ otherbody {
   letter-spacing: -.05rem;
 }
 
-
-
-
-
 .about{
 
   text-align: center;
@@ -168,7 +155,6 @@ otherbody {
   background-image: linear-gradient(180deg, #172827,#1a2d3dc7,#7b899618);
   background-image: linear-gradient(180deg, rgb(23, 40, 39),rgba(26,45,61,0.78),rgba(123,137,150,0.09));
 }
-
 
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
