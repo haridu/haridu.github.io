@@ -1,16 +1,12 @@
-body {
+html, body {
+  height: 100%;
+ }
 
- 
-  
-}
-
-
-
-html {
+ div {
   min-height: 100%;
-}
+ }
 
-.container {
+ .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -61,6 +57,7 @@ skills{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+
 /*
  *contains general description
  */
