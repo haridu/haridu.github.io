@@ -69,7 +69,7 @@
         <span class="card-label">Primary stack</span>
         <h3 class="card-title">.NET &amp; C#</h3>
         <div class="pills" id="pills-dotnet"></div>
-        <span class="card-glyph">9</span>
+        <span class="card-glyph">MS</span>
       </div>
 
       <div class="skill-card c-red">
@@ -186,6 +186,48 @@
     renderPills('pills-data',    ['MS SQL', 'Oracle PL/SQL', 'SQLite']);
     renderPills('pills-lang',    ['C#', 'Java', 'JavaScript', 'C']);
     renderPills('pills-devops',  ['Microsoft Azure', 'Git', 'Agile', 'Scrum']);
+
+    // 1. Parallax on ghost "Hari" bg text
+    var bgText = document.querySelector('.hero-bg-text');
+    window.addEventListener('scroll', function() {
+      var scrollY = window.scrollY;
+      if (bgText) {
+        bgText.style.transform = 'translateY(calc(-50% + ' + (scrollY * 0.35) + 'px))';
+      }
+    }, { passive: true });
+
+    // 2. Fade-in + slide-up on scroll for cards, alias strip, section title
+    var revealEls = document.querySelectorAll('.skill-card, .alias-inner, .section-title');
+
+    revealEls.forEach(function(el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(40px)';
+      el.style.transition = 'opacity 0.6s cubic-bezier(0.22,1,0.36,1), transform 0.6s cubic-bezier(0.22,1,0.36,1)';
+    });
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry, i) {
+        if (entry.isIntersecting) {
+          setTimeout(function() {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(function(el) { observer.observe(el); });
+
+    // 3. Subtle nav background intensifies on scroll
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 60) {
+        nav.style.background = 'rgba(12,12,12,0.97)';
+      } else {
+        nav.style.background = 'rgba(12,12,12,0.8)';
+      }
+    }, { passive: true });
   </script>
 
 </body>

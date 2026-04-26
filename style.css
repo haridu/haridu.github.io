@@ -87,15 +87,15 @@ nav {
   font-weight: 900;
   letter-spacing: -0.06em;
   line-height: 0.85;
-  color: rgba(0, 0, 0, 0);
+  color: rgba(255,255,255,0.0019);
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
 }
 
 .hero-profile {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   overflow: hidden;
   border: 2.5px solid var(--blue);
@@ -370,19 +370,20 @@ footer {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.skill-card:nth-child(1) { animation: fadeUp 0.5s 0.25s cubic-bezier(0.22,1,0.36,1) both; }
-.skill-card:nth-child(2) { animation: fadeUp 0.5s 0.30s cubic-bezier(0.22,1,0.36,1) both; }
-.skill-card:nth-child(3) { animation: fadeUp 0.5s 0.35s cubic-bezier(0.22,1,0.36,1) both; }
-.skill-card:nth-child(4) { animation: fadeUp 0.5s 0.40s cubic-bezier(0.22,1,0.36,1) both; }
-.skill-card:nth-child(5) { animation: fadeUp 0.5s 0.45s cubic-bezier(0.22,1,0.36,1) both; }
+/* card reveal handled by scroll JS */
 
 /* ── RESPONSIVE ── */
 @media (max-width: 760px) {
   nav { padding: 1rem 1.25rem; }
   .hero { padding: 5rem 1.25rem 3rem; }
-  .hero-bg-text { font-size: 7rem; }
-  .hero-profile { width: 90px; height: 90px; font-size: 1.8rem; right: 1.25rem; }
-  .hero-h1 { font-size: 4.5rem; }
+  .hero-bg-text { font-size: 5rem; left: 0; }
+  .hero-top-row { flex-direction: column-reverse; align-items: flex-start; gap: 1.25rem; }
+  .hero-profile {
+    width: 120px;
+    height: 120px;
+    font-size: 2rem;
+  }
+  .hero-h1 { font-size: 3.2rem; letter-spacing: -0.04em; }
   .hero-footer-row { flex-direction: column; align-items: flex-start; }
   .section-title { padding: 3rem 1.25rem 0; }
   .skill-grid { grid-template-columns: 1fr; gap: 6px; padding: 0 6px; }
