@@ -21,27 +21,29 @@
   <section class="hero">
     <div class="hero-bg-text" aria-hidden="true">Hari</div>
 
-    <div class="hero-profile">
-      <img src="images\harindu.jpg" alt="Hari Tillekeratne"
-        onerror="this.style.display='none';this.parentElement.innerHTML='HT'">
-    </div>
-
-    <div class="hero-bottom">
-      <div class="hero-tag">Auckland, NZ</div>
-
-      <h1 class="hero-h1">
-        <span class="line-teal">Hari</span><br>
-        <span class="line-muted">Tillekeratne</span>
-      </h1>
+    <div class="hero-inner">
+      <div class="hero-top-row">
+        <div>
+          <div class="hero-tag">Auckland, NZ</div>
+          <h1 class="hero-h1">
+            <span class="line-blue">Hari</span><br>
+            <span class="line-muted">Tillekeratne</span>
+          </h1>
+        </div>
+        <div class="hero-profile">
+          <img src="images/harindu.jpg" alt="Hari Tillekeratne"
+            onerror="this.style.display='none';this.parentElement.innerHTML='HT'">
+        </div>
+      </div>
 
       <div class="hero-footer-row">
         <p class="hero-desc">
-          Software developer with <span id="years-exp"></span> years of industry experience.
-          Deep expertise in .NET, MAUI, Xamarin & SQL Server. <br/>I love to develop stuff.
+          Software developer with <span id="years-exp">9</span> years of industry experience.
+          Deep expertise in .NET, MAUI, Xamarin &amp; SQL Server.<br>I love to develop stuff :)
         </p>
         <div class="hero-stats">
           <div class="stat">
-            <div class="stat-num" id="years-num"></div>
+            <div class="stat-num" id="years-num">9</div>
             <div class="stat-label">Years</div>
           </div>
           <div class="stat">
@@ -63,37 +65,37 @@
 
     <div class="skill-grid">
 
-      <div class="skill-card c-teal">
+      <div class="skill-card c-blue">
         <span class="card-label">Primary stack</span>
-        <h3 class="card-title">.NET & C#</h3>
+        <h3 class="card-title">.NET &amp; C#</h3>
         <div class="pills" id="pills-dotnet"></div>
         <span class="card-glyph">9</span>
       </div>
 
-      <div class="skill-card c-peach">
+      <div class="skill-card c-red">
         <span class="card-label">Mobile</span>
-        <h3 class="card-title">MAUI &<br>Xamarin</h3>
+        <h3 class="card-title">MAUI &amp;<br>Xamarin</h3>
         <div class="pills" id="pills-mobile"></div>
         <span class="card-glyph">📱</span>
       </div>
 
-      <div class="skill-card c-yellow">
+      <div class="skill-card c-purple">
         <span class="card-label">Data</span>
         <h3 class="card-title">SQL<br>Server</h3>
         <div class="pills" id="pills-data"></div>
         <span class="card-glyph">DB</span>
       </div>
 
-      <div class="skill-card c-dark col-2">
+      <div class="skill-card c-green col-2">
         <span class="card-label">Languages</span>
-        <h3 class="card-title">C#, Java, JS & more</h3>
+        <h3 class="card-title">C#, Java, JS &amp; more</h3>
         <div class="pills" id="pills-lang"></div>
         <span class="card-glyph">&lt;/&gt;</span>
       </div>
 
-      <div class="skill-card c-purple">
-        <span class="card-label">Cloud & DevOps</span>
-        <h3 class="card-title">Azure &<br>Git</h3>
+      <div class="skill-card c-black">
+        <span class="card-label">Cloud &amp; DevOps</span>
+        <h3 class="card-title">Azure &amp;<br>Git</h3>
         <div class="pills" id="pills-devops"></div>
         <span class="card-glyph">☁</span>
       </div>
@@ -109,7 +111,7 @@
         <div class="alias-sub">LinkedIn · GitHub</div>
       </div>
       <div class="alias-btns">
-        <a href="https://www.linkedin.com/in/haridu/" target="_blank" class="btn btn-teal">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/haridu/" target="_blank" class="btn btn-blue">LinkedIn</a>
         <a href="https://github.com/haridu" target="_blank" class="btn btn-outline">GitHub</a>
       </div>
     </div>
@@ -118,36 +120,32 @@
   <footer>© <span id="footer-year"></span> Hari Tillekeratne · hari.co.nz</footer>
 
   <script>
-    // ─── YEARS OF EXPERIENCE ───────────────────────────────────────────
-    // Career start date — adjust if needed
-    const CAREER_START = new Date('2016-01-01');
+    // ── YEARS OF EXPERIENCE (auto-updates every year) ──────────────────
+    var CAREER_START = new Date('2016-01-01');
 
     function calcYears() {
-      const now = new Date();
-      const diff = now.getFullYear() - CAREER_START.getFullYear();
-      const hadBirthday =
+      var now = new Date();
+      var diff = now.getFullYear() - CAREER_START.getFullYear();
+      var hadAnniversary =
         now.getMonth() > CAREER_START.getMonth() ||
-        (now.getMonth() === CAREER_START.getMonth() && now.getDate() >= CAREER_START.getDate());
-      return hadBirthday ? diff : diff - 1;
+        (now.getMonth() === CAREER_START.getMonth() &&
+         now.getDate() >= CAREER_START.getDate());
+      return hadAnniversary ? diff : diff - 1;
     }
 
-    const yrs = calcYears();
+    var yrs = calcYears();
     document.getElementById('years-num').textContent = yrs;
     document.getElementById('years-exp').textContent = yrs;
     document.getElementById('footer-year').textContent = new Date().getFullYear();
 
-
-    // ─── WIKI PILL RENDERER ────────────────────────────────────────────
-    // Map display label → Wikipedia article slug
-    const WIKI = {
+    // ── WIKI PILL RENDERER ─────────────────────────────────────────────
+    var WIKI = {
       '.NET Framework':  '.NET_Framework',
       '.NET Core':       '.NET',
       'MVC':             'Model%E2%80%93view%E2%80%93controller',
       'iOS':             'iOS',
       'Android':         'Android_(operating_system)',
       'Cross-platform':  'Cross-platform_software',
-      'MAUI':            '.NET_MAUI',
-      'Xamarin':         'Xamarin',
       'MS SQL':          'Microsoft_SQL_Server',
       'Oracle PL/SQL':   'PL/SQL',
       'SQLite':          'SQLite',
@@ -158,36 +156,31 @@
       'Microsoft Azure': 'Microsoft_Azure',
       'Git':             'Git',
       'Agile':           'Agile_software_development',
-      'Scrum':           'Scrum_(software_development)',
+      'Scrum':           'Scrum_(software_development)'
     };
 
-    function wikiURL(label) {
-      const slug = WIKI[label];
-      return slug ? `https://en.wikipedia.org/wiki/${slug}` : null;
-    }
-
     function renderPills(containerId, labels) {
-      const container = document.getElementById(containerId);
-      labels.forEach(label => {
-        const url = wikiURL(label);
-        const el = url
-          ? Object.assign(document.createElement('a'), {
-              href: url,
-              target: '_blank',
-              rel: 'noopener noreferrer',
-              textContent: label,
-              className: 'pill pill-link',
-              title: `Wikipedia: ${label}`
-            })
-          : Object.assign(document.createElement('span'), {
-              textContent: label,
-              className: 'pill'
-            });
+      var container = document.getElementById(containerId);
+      if (!container) return;
+      labels.forEach(function(label) {
+        var slug = WIKI[label];
+        var el;
+        if (slug) {
+          el = document.createElement('a');
+          el.href = 'https://en.wikipedia.org/wiki/' + slug;
+          el.target = '_blank';
+          el.rel = 'noopener noreferrer';
+          el.className = 'pill pill-link';
+          el.title = 'Wikipedia: ' + label;
+        } else {
+          el = document.createElement('span');
+          el.className = 'pill';
+        }
+        el.textContent = label;
         container.appendChild(el);
       });
     }
 
-    // Render each card's pills
     renderPills('pills-dotnet',  ['.NET Framework', '.NET Core', 'MVC']);
     renderPills('pills-mobile',  ['iOS', 'Android', 'Cross-platform']);
     renderPills('pills-data',    ['MS SQL', 'Oracle PL/SQL', 'SQLite']);
