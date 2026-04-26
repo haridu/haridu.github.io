@@ -1,123 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Hari Tillekeratne</title>
-
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Custom styles for this template -->
-	<link href="customcss.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hari Tillekeratne</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<div class="about">
-		<div class="container-fluid" style="max-width:900px">
 
-			<div class="wrapper">
-				<div class="header">
-					<div class="abouttext">
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-name">Hari Tillekeratne</a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#alias">haridu</a></li>
+    </ul>
+  </nav>
 
-						<!--<h1 class="#">
-							Hari
-						</h1> -->
-						<h2 class="#">
-							<strong>Hi :) My name is Hari Tillekeratne.</strong><br/>
-						    I am a Graduate of Auckland University of Technology.<br/>
-							I love to develop stuff. </h2>
-					</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text" aria-hidden="true">Hari</div>
 
-					<img class="img-circle" height="200" width="200" src="images\harindu.jpg" />
+    <div class="hero-profile">
+      <img src="images\harindu.jpg" alt="Hari Tillekeratne"
+        onerror="this.style.display='none';this.parentElement.innerHTML='HT'">
+    </div>
 
-					<socialbutton>
-						<div style="margin:18px;">
-							<!--- Social Media Icons-->
-							<a href="https://www.linkedin.com/in/haridu/" target="_blank">
-								<img src="images\linkedin-logo.png" width="32" height="32" border="0" />
-							</a>
-							<a href="https://github.com/haridu" target="_blank">
-								<img src="images\github-logo.png" width="32" height="32" border="0" />
-							</a>
-						</div>
-					</socialbutton>
-					<!--- end Social Media Icons-->
+    <div class="hero-bottom">
+      <div class="hero-tag">Auckland, NZ</div>
 
-					<skills>
-						My Skills
-					</skills>
+      <h1 class="hero-h1">
+        <span class="line-teal">Hari</span><br>
+        <span class="line-muted">Tillekeratne</span>
+      </h1>
+
+      <div class="hero-footer-row">
+        <p class="hero-desc">
+          Software developer with <span id="years-exp"></span> years of industry experience.
+          Deep expertise in .NET, MAUI, Xamarin & SQL Server. <br/>I love to develop stuff.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" id="years-num"></div>
+            <div class="stat-label">Years</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">AUT</div>
+            <div class="stat-label">Graduate</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">NZ</div>
+            <div class="stat-label">Based</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <h2 class="section-title">Developer<span class="dim">.</span></h2>
+
+    <div class="skill-grid">
+
+      <div class="skill-card c-teal">
+        <span class="card-label">Primary stack</span>
+        <h3 class="card-title">.NET & C#</h3>
+        <div class="pills" id="pills-dotnet"></div>
+        <span class="card-glyph">9</span>
+      </div>
+
+      <div class="skill-card c-peach">
+        <span class="card-label">Mobile</span>
+        <h3 class="card-title">MAUI &<br>Xamarin</h3>
+        <div class="pills" id="pills-mobile"></div>
+        <span class="card-glyph">📱</span>
+      </div>
+
+      <div class="skill-card c-yellow">
+        <span class="card-label">Data</span>
+        <h3 class="card-title">SQL<br>Server</h3>
+        <div class="pills" id="pills-data"></div>
+        <span class="card-glyph">DB</span>
+      </div>
+
+      <div class="skill-card c-dark col-2">
+        <span class="card-label">Languages</span>
+        <h3 class="card-title">C#, Java, JS & more</h3>
+        <div class="pills" id="pills-lang"></div>
+        <span class="card-glyph">&lt;/&gt;</span>
+      </div>
+
+      <div class="skill-card c-purple">
+        <span class="card-label">Cloud & DevOps</span>
+        <h3 class="card-title">Azure &<br>Git</h3>
+        <div class="pills" id="pills-devops"></div>
+        <span class="card-glyph">☁</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ALIAS -->
+  <div class="alias-strip" id="alias">
+    <div class="alias-inner">
+      <div>
+        <div class="alias-name">haridu</div>
+        <div class="alias-sub">LinkedIn · GitHub</div>
+      </div>
+      <div class="alias-btns">
+        <a href="https://www.linkedin.com/in/haridu/" target="_blank" class="btn btn-teal">LinkedIn</a>
+        <a href="https://github.com/haridu" target="_blank" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© <span id="footer-year"></span> Hari Tillekeratne · hari.co.nz</footer>
+
+  <script>
+    // ─── YEARS OF EXPERIENCE ───────────────────────────────────────────
+    // Career start date — adjust if needed
+    const CAREER_START = new Date('2016-01-01');
+
+    function calcYears() {
+      const now = new Date();
+      const diff = now.getFullYear() - CAREER_START.getFullYear();
+      const hadBirthday =
+        now.getMonth() > CAREER_START.getMonth() ||
+        (now.getMonth() === CAREER_START.getMonth() && now.getDate() >= CAREER_START.getDate());
+      return hadBirthday ? diff : diff - 1;
+    }
+
+    const yrs = calcYears();
+    document.getElementById('years-num').textContent = yrs;
+    document.getElementById('years-exp').textContent = yrs;
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
 
 
-					<!-- <div class="col-sm-12"> -->
+    // ─── WIKI PILL RENDERER ────────────────────────────────────────────
+    // Map display label → Wikipedia article slug
+    const WIKI = {
+      '.NET Framework':  '.NET_Framework',
+      '.NET Core':       '.NET',
+      'MVC':             'Model%E2%80%93view%E2%80%93controller',
+      'iOS':             'iOS',
+      'Android':         'Android_(operating_system)',
+      'Cross-platform':  'Cross-platform_software',
+      'MAUI':            '.NET_MAUI',
+      'Xamarin':         'Xamarin',
+      'MS SQL':          'Microsoft_SQL_Server',
+      'Oracle PL/SQL':   'PL/SQL',
+      'SQLite':          'SQLite',
+      'C#':              'C_Sharp_(programming_language)',
+      'Java':            'Java_(programming_language)',
+      'JavaScript':      'JavaScript',
+      'C':               'C_(programming_language)',
+      'Microsoft Azure': 'Microsoft_Azure',
+      'Git':             'Git',
+      'Agile':           'Agile_software_development',
+      'Scrum':           'Scrum_(software_development)',
+    };
 
-						<div class="table-responsive">
-							<table>
+    function wikiURL(label) {
+      const slug = WIKI[label];
+      return slug ? `https://en.wikipedia.org/wiki/${slug}` : null;
+    }
 
-								<tbody>
-									<tr bgcolor="#F6416C">
-										<th>Programming Languages</th>
-										<td colspan="2">C#</td>
-										<td>Java</td>
-										<td>JavaScipt</td>
-										<td>C</td>
-									</tr>
-									<tr bgcolor="#3DC0A1">
-										<th>Databases</th>
-										<td colspan="2">Microsoft SQL Server</td>
-										<td colspan="2">Oracle SQL PL</td>
-										<td colspan="1">SQLite</td>
-									</tr>
-									<tr bgcolor="#08475e">
-										<th>Frameworks</th>
-										<td colspan="2">.NET(MVC)/ .NET Core</td>
-										<td>Android</td>
-										<td>Xamarin(Android/iOS)</td>
-										<td>Microsoft chatbot</td>
-									</tr>
-									<tr bgcolor="#311D3F">
-										<th>Other</th>
-										<td colspan="2">Agile Scrum</td>
-										<td>Git</td>
-										<td>Microsoft Azure</td>
-										<td>Office 365 suite</td>
-									</tr>
-								</tbody>
-							</table>
+    function renderPills(containerId, labels) {
+      const container = document.getElementById(containerId);
+      labels.forEach(label => {
+        const url = wikiURL(label);
+        const el = url
+          ? Object.assign(document.createElement('a'), {
+              href: url,
+              target: '_blank',
+              rel: 'noopener noreferrer',
+              textContent: label,
+              className: 'pill pill-link',
+              title: `Wikipedia: ${label}`
+            })
+          : Object.assign(document.createElement('span'), {
+              textContent: label,
+              className: 'pill'
+            });
+        container.appendChild(el);
+      });
+    }
 
-						</div>
-					</div>
-				</div>
-			</div>
+    // Render each card's pills
+    renderPills('pills-dotnet',  ['.NET Framework', '.NET Core', 'MVC']);
+    renderPills('pills-mobile',  ['iOS', 'Android', 'Cross-platform']);
+    renderPills('pills-data',    ['MS SQL', 'Oracle PL/SQL', 'SQLite']);
+    renderPills('pills-lang',    ['C#', 'Java', 'JavaScript', 'C']);
+    renderPills('pills-devops',  ['Microsoft Azure', 'Git', 'Agile', 'Scrum']);
+  </script>
 
-		</div>
-	</div>
-
-
-		<!-- Footer -->
-		<footer class="py-5 bg-black">
-			<div class="container">
-				<p class="m-0 text-center text-white small">Copyright &copy; hari.co.nz 2018</p>
-			</div>
-			<!-- /.container -->
-		</footer>
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-	</div>
 </body>
-
 </html>
